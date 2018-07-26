@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Hexconverter</string>
+    <string name="hex_hint">Hexadecimal</string>
+    <string name="octal_hint">Octal</string>
+    <string name="binary_hint">Binary</string>
+    <string name="decimal_hint">Decimal</string>
+</resources>
