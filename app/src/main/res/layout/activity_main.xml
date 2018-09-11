@@ -10,40 +10,89 @@
 
         <EditText
             android:id="@+id/binary"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_size"
             android:hint="@string/binary_hint"
             android:padding="@dimen/default_padding"
             android:layout_margin="@dimen/default_margin"
-            android:layout_alignParentTop="true"/>
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/binary_copy"
+            />
+
+        <Button
+            android:id="@+id/binary_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:text="@string/copy"/>
+
         <EditText
             android:id="@+id/hexadecimal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_size"
             android:hint="@string/hex_hint"
             android:padding="@dimen/default_padding"
             android:layout_margin="@dimen/default_margin"
-            android:layout_below="@id/binary"/>
+            android:layout_below="@id/binary"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/binary_copy"
+            />
+
+        <Button
+            android:id="@+id/hexadecimal_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/binary_copy"
+
+            android:text="@string/copy"/>
         <EditText
             android:id="@+id/octal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_size"
             android:hint="@string/octal_hint"
             android:padding="@dimen/default_padding"
             android:layout_margin="@dimen/default_margin"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/octal_copy"
             android:layout_below="@id/hexadecimal"/>
+
+        <Button
+            android:id="@+id/octal_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/hexadecimal_copy"
+
+            android:text="@string/copy"/>
+
         <EditText
             android:id="@+id/decimal"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/text_size"
             android:hint="@string/decimal_hint"
             android:padding="@dimen/default_padding"
             android:layout_margin="@dimen/default_margin"
-            android:layout_below="@id/octal"/>
+            android:layout_below="@id/octal"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/decimal_copy"/>
+        <Button
+            android:id="@+id/decimal_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/octal_copy"
+
+            android:text="@string/copy"/>
     </RelativeLayout>
 
 

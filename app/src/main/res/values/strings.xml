@@ -4,4 +4,5 @@
     <string name="octal_hint">Octal</string>
     <string name="binary_hint">Binary</string>
     <string name="decimal_hint">Decimal</string>
+    <string name="copy">Copy</string>
 </resources>

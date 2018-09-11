@@ -111,6 +111,7 @@ public class EditTextListener {
                         this.context.getBinary().setText(data.getBin());
                         this.context.getDecimal().setText(data.getDec());
                         this.context.getOctal().setText(data.getOct());
+                        break;
 
                     case R.id.octal:
                         System.out.println("Oct");
@@ -119,6 +120,7 @@ public class EditTextListener {
                         this.context.getBinary().setText(data.getBin());
                         this.context.getDecimal().setText(data.getDec());
                         this.context.getHexadecimal().setText(data.getHex());
+                        break;
                     case R.id.binary:
                         System.out.println("Bin!");
                         data = NumberConverter.getOthersFromBin((s.toString()));
@@ -126,6 +128,7 @@ public class EditTextListener {
                         this.context.getDecimal().setText(data.getDec());
                         this.context.getOctal().setText(data.getOct());
                         this.context.getHexadecimal().setText(data.getHex());
+                        break;
                     case R.id.decimal:
                         System.out.println("Dec!");
                         data = NumberConverter.getOthersFromDec((s.toString()));
@@ -133,6 +136,7 @@ public class EditTextListener {
                         this.context.getBinary().setText(data.getBin());
                         this.context.getOctal().setText(data.getOct());
                         this.context.getHexadecimal().setText(data.getHex());
+                        break;
                 }
             }
 
